@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Having a New Zealand \n Driver's Licence"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Having a Foreign \n Driver's Licence"
+                        android:textSize="12dp" />
+
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<RadioButton-->
+                    <!--android:id="@+id/radio1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/radioText1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Having a New Zealand \n Driver's Licence" />-->
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<RadioButton-->
+                    <!--android:id="@+id/radio2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/radioText2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Having a foregin \nDriver Licence" />-->
+
+                    <!--</LinearLayout>-->
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e1e0e0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/spinnerRelativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/edittext_border"
+                        android:padding="3dp">
+
+                        <Spinner
+                            android:id="@+id/countrySpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            ></Spinner>
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:id="@+id/linearIssue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_border"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/lcstartDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="sans-serif"
+                                android:text="Issuing Date"
+                                android:padding="5dp"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:id="@+id/issueImageView"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/calender" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearExpiry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_border"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:weightSum="2">
+
+
+                            <EditText
+                                android:id="@+id/lcendDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="sans-serif"
+                                android:text="Expiry Date"
+                                android:padding="5dp"
+                                android:textSize="12dp" />
+
+
+                            <ImageView
+                                android:id="@+id/expiryImageView"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/calender" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e1e0e0" />
+
+                <EditText
+                    android:id="@+id/userNameLic"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_border"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:fontFamily="sans-serif"
+                    android:hint="Your Full Name (as it appears in your driver's licence)"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor_green"
+                    android:textSize="12dp" />
+
+
+                <EditText
+                    android:id="@+id/lcNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_border"
+                    android:fontFamily="sans-serif"
+                    android:hint="Your Licence Number"
+                    android:imeOptions="actionDone"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor_green"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/lineardob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_border"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <EditText
+                            android:id="@+id/lcdob"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="sans-serif"
+                            android:text="Date Of Birth"
+                            android:padding="5dp"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:id="@+id/dobImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right|center"
+                            android:src="@drawable/calender" />
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/contactNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_border"
+                        android:fontFamily="sans-serif"
+                        android:hint="Alternate Contact No."
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="12"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textCursorDrawable="@drawable/cursor_green"
+                        android:textSize="12dp" />
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/licAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_border"
+                    android:fontFamily="sans-serif"
+                    android:gravity="top"
+                    android:hint="Complete Address (as it appears in your driver's licence)"
+                    android:maxLines="4"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/cursor_green"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#e1e0e0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.fmrnz.utils.CircularDefaultImageView
+                            android:id="@+id/imageCar"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/upload"
+                            android:visibility="gone" />
+
+                        <com.fmrnz.utils.CircularNetworkImageView
+                            android:id="@+id/imageCarNetwork"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/upload"
+                            android:visibility="visible" />
+
+
+                    </FrameLayout>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Upload Your Licence"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#e1e0e0" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shedow_background"
+            android:elevation="10dp"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/proceesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_color"
+                android:drawableRight="@drawable/next"
+                android:fontFamily="sans-serif-medium"
+                android:padding="8dp"
+                android:text="Next"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+        <com.fmrnz.avlIndicatorLoding.AVLoadingIndicatorView
+            android:id="@+id/progressLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            tools:indicator="BallScaleMultiple" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fmrnz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- <uses-feature -->
+    <!-- android:name="android.hardware.camera.any" -->
+    <!-- android:required="true" /> -->
+    <!-- <uses-feature -->
+    <!-- android:name="android.hardware.camera.autofocus" -->
+    <!-- android:required="false" /> -->
+    <application
+        android:name=".NZApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,icon,theme,label">
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+        <meta-data
+            android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
+            android:value="false" />
+
+        <activity android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/ak_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".LoginActivithy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <receiver
+            android:name=".services.GcmBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.editsoft.medimanapp" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.GCMIntentService" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CarByDayActivity" />
+        <activity
+            android:name=".CarRentalDeatilActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Toolbar" />
+        <activity
+            android:name=".BookingActivity"
+            android:label="Booking Detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".DriverLicenceActivity"
+            android:label="Driver&apos;s Licence Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".DriverLicenceUpdateActivity"
+            android:label="Driver&apos;s Licence Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".filterActivity"
+            android:label="Filter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="Feedback"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".BookingConfirmdActivity"
+            android:label="Booking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OTPActivity"
+            android:label="OTP"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".OTPActivity2"
+            android:label="OTP"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".OTPActivity3"
+            android:label="OTP"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".BookingDeatilActivity"
+            android:label="Your Booking Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".MyRideActivity"
+            android:label="Booking Detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".DemoActivity"
+            android:label="Booking Detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".OngoingRideDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".UpcomingRideDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CancelledRideDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinishedRideDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".Receivers.InstallReferrerReceiver"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_REFERRER">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".FMRPointsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RateAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".DialogActivity"
+            android:theme="@style/myDialog" />
+        <activity
+            android:name=".DialogActivity2"
+            android:theme="@style/myDialog" />
+        <activity
+            android:name=".DialogActivity3"
+            android:theme="@style/myDialog" />
+        <activity
+            android:name=".AlertActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GPEditableActivity"
+            android:theme="@style/myDialog" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDtmWIrKG9g0m1koUnH_NmGI3JYoAH56sU" />
+
+        <service
+            android:name=".services.AppLocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".FilterCarActivity" />
+        <activity
+            android:name=".ForgetActivity"
+            android:theme="@style/myDialog" />
+        <activity android:name=".ResetPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".LocationBaseActivity" />
+        <activity android:name=".FmrOfferActivity" />
+        <activity android:name=".HowActivity" />
+        <activity android:name=".FAQActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".TermsActivity" />
+        <activity android:name=".utils.WebViewActivity" />
+        <activity android:name=".utils.WebTermActivity"></activity>
+
+
+    </application>
+
+</manifest>

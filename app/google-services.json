@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "835179462852",
+    "firebase_url": "https://findmyridenznew.firebaseio.com",
+    "project_id": "findmyridenznew",
+    "storage_bucket": "findmyridenznew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835179462852:android:41da327fa5c6c0a6",
+        "android_client_info": {
+          "package_name": "com.fmrnz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835179462852-4le6au0qfjhg1m8voe1cub3jk7ceme9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fmrnz",
+            "certificate_hash": "90aba3ef03e7578f2a61ced8bc773bad16eb48d2"
+          }
+        },
+        {
+          "client_id": "835179462852-b9jggrl5qqk27s93aouogeh96fmm706k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrCOcwWV5-Vl8sVx0CpR6W-tJ6pQHINkA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835179462852-b9jggrl5qqk27s93aouogeh96fmm706k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

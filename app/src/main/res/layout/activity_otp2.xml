@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking ID :"
+                android:textSize="18dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/endBookinId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FMR003691"
+                android:textSize="18dp"/>
+
+
+            </LinearLayout>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="#626262"
+            android:layout_marginTop="30dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/textforOtpend"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/edit1"
+                android:background="@drawable/box_icon"
+                android:inputType="phone"
+                android:gravity="center"
+                android:maxLength="1"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/box_icon"
+                android:id="@+id/edit2"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/box_icon"
+                android:id="@+id/edit3"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/box_icon"
+                android:id="@+id/edit4"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/box_icon"
+                android:id="@+id/edit5"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:gravity="center"
+                android:background="@drawable/box_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/edit6"
+                android:inputType="phone"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:maxLength="1"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="13dp"
+                android:text="@string/textforOtp1end"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="#2baf6c"
+                android:layout_marginTop="20dp"/>
+            
+            
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="230dp"
+                android:layout_height="35dp"
+                android:text="End Trip"
+                android:textColor="#fff"
+                android:elevation="8dp"
+                android:id="@+id/otpSubmit"
+                android:background="#4da94d"
+                android:textAllCaps="false"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Resend"
+                android:background="#4da94d"
+                android:textColor="#fff"
+                android:id="@+id/otpResendSubmit"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

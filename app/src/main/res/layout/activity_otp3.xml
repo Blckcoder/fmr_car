@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/textforOtpfeedback"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="7dp">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:padding="@dimen/_9sdp"
+                android:text="In some cases OTP takes upto 5 minutes to reach your e-mail, this shouldn't take long just sit tight on your mail and do not RESEND OTP until then"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/edit1"
+                android:background="@drawable/box_icon"
+                android:inputType="phone"
+                android:gravity="center"
+                android:maxLength="1"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/box_icon"
+                android:id="@+id/edit2"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/box_icon"
+                android:id="@+id/edit3"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/box_icon"
+                android:id="@+id/edit4"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/box_icon"
+                android:id="@+id/edit5"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:gravity="center"
+                android:background="@drawable/box_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/edit6"
+                android:inputType="phone"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:maxLength="1"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:text="@string/textforOtpfeedback1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#2baf6c"
+                android:layout_marginTop="20dp"/>
+            
+            
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="230dp"
+                android:layout_height="35dp"
+                android:text="Reset Password"
+                android:textColor="#fff"
+                android:elevation="8dp"
+                android:id="@+id/otpSubmit"
+                android:background="@drawable/bacground_gradient"
+                android:textAllCaps="false"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Resend OTP"
+                android:textAllCaps="false"
+                android:padding="@dimen/_3sdp"
+                android:background="@drawable/bacground_gradient"
+                android:textColor="#fff"
+                android:id="@+id/otpResendSubmit"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

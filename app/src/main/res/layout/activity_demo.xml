@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:weightSum="4"
+        android:id="@+id/llHeader"
+        android:background="#FF5A01"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+
+    <LinearLayout
+        android:id="@+id/llLocation"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:textSize="12dp"/>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit_ba"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/currentLocation"
+            android:hint="Getting Location"
+            android:layout_gravity="start"
+            android:layout_marginTop="2dp"
+            android:textColorHint="#fff"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:textSize="9dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    </LinearLayout>

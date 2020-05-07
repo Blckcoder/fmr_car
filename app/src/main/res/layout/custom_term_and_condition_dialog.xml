@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#fff" />
+
+        <TextView
+            android:id="@+id/diffText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:textSize="11sp"
+            android:text="I agree to the"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/diff_terms_of_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="terms of service"
+            android:padding="3dp"
+            android:textSize="11sp"
+            android:textColor="#FFFF00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and"
+            android:textSize="11sp"
+            android:textColor="#FFF" />
+
+
+        <TextView
+            android:id="@+id/diff_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="privacy policy"
+            android:padding="3dp"
+            android:textSize="11sp"
+            android:textColor="#FFFF00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#fff" />
+
+        <TextView
+            android:id="@+id/diffText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="@string/messageWithLink1"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:id="@+id/dilaog_term_ok"
+            android:layout_gravity="end"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

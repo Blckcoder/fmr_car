@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.fmrnz.CustomGridView
+            android:id="@+id/GridView_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:numColumns="3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rangeLayout"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1968-2018"
+                android:layout_gravity="end"
+                android:padding="5dp"
+                android:id="@+id/rangeTextView"
+                android:layout_marginRight="20dp"/>
+
+        <org.florescu.android.rangeseekbar.RangeSeekBar
+            android:id="@+id/rangeSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:thumbTint="#000"
+            rsb:textAboveThumbsColor="@android:color/black" />
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+</LinearLayout>
+
+
+    <!--<GridView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/gridview"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:columnWidth="50dp"-->
+        <!--android:numColumns="auto_fit"-->
+        <!--android:verticalSpacing="10dp"-->
+        <!--android:horizontalSpacing="10dp"-->
+        <!--android:stretchMode="columnWidth"-->
+        <!--android:gravity="center" />-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/llHeading"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="2">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="Vehicle Type"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="16dp"-->
+            <!--android:id="@+id/filterChild"-->
+            <!--android:padding="10dp"-->
+            <!--android:textStyle="bold" />-->
+    <!--</LinearLayout>-->
+

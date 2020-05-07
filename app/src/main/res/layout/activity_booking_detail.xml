@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <com.fmrnz.utils.CircularNetworkImageView
+                        android:id="@+id/ownerImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight=".2" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/ownerNameRide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="test"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Owner Name :"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/ownerNameBook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FMR003691"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Car Name :"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/carNameBook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FMR003691"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PickUp Date :"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/pickDateBook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FMR003691"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Drop Date :"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/dropDateBook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FMR003691"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Cost :"
+                            android:textColor="#000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/costBook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FMR003691"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginBottom="30dp"-->
+                    <!--android:visibility="visible">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/llHeading"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:background="@drawable/filter_border"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="2">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_weight="1.5"-->
+                            <!--android:text="Provider Detail"-->
+                            <!--android:textColor="#fff"-->
+                            <!--android:textSize="16dp"-->
+                            <!--android:textStyle="bold" />-->
+
+                        <!--<FrameLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:id="@+id/provider"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:id="@+id/downlayout"-->
+                                <!--android:layout_width="40dp"-->
+                                <!--android:layout_height="40dp"-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:layout_weight="0.5">-->
+
+                                <!--<ImageView-->
+                                    <!--android:id="@+id/downImage"-->
+                                    <!--android:layout_width="25dp"-->
+                                    <!--android:layout_height="25dp"-->
+                                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                                    <!--android:layout_marginRight="5dp"-->
+                                    <!--android:src="@drawable/down_arrow" />-->
+                            <!--</LinearLayout>-->
+
+                            <!--<LinearLayout-->
+                                <!--android:id="@+id/upLayout"-->
+                                <!--android:layout_width="40dp"-->
+                                <!--android:layout_height="40dp"-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:layout_weight="0.5"-->
+                                <!--android:visibility="gone">-->
+
+                                <!--<ImageView-->
+                                    <!--android:id="@+id/upImage"-->
+                                    <!--android:layout_width="25dp"-->
+                                    <!--android:layout_height="25dp"-->
+                                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                                    <!--android:layout_marginRight="5dp"-->
+                                    <!--android:src="@drawable/up_arrow" />-->
+                            <!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+                        <!--</FrameLayout>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/content"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:visibility="gone">-->
+
+
+                        <!--<com.carrentalapp.utils.CircularNetworkImageView-->
+                            <!--android:id="@+id/userrImageRide"-->
+                            <!--android:layout_width="60dp"-->
+                            <!--android:layout_height="60dp"-->
+                            <!--android:visibility="gone"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:layout_marginTop="20dp" />-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="center"-->
+                            <!--android:visibility="gone"-->
+                            <!--android:orientation="horizontal">-->
+
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/ownerNameRide"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:padding="16dp"-->
+                                <!--android:text="test"-->
+                                <!--android:textSize="15dp"-->
+                                <!--android:textStyle="bold" />-->
+
+                        <!--</LinearLayout>-->
+
+                        <!--<View-->
+                            <!--android:visibility="gone"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:background="#696969" />-->
+
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:orientation="vertical"-->
+                            <!--android:gravity="center">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:layout_marginLeft="10dp"-->
+                                <!--android:layout_marginRight="10dp">-->
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:padding="5dp"-->
+                                    <!--android:text="Member Since :"-->
+                                    <!--android:textSize="13dp" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/memberRide5"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:padding="5dp"-->
+                                    <!--android:text="2010"-->
+                                    <!--android:textSize="13dp" />-->
+
+
+                            <!--</LinearLayout>-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:layout_marginLeft="10dp"-->
+                                <!--android:layout_marginRight="10dp">-->
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:padding="5dp"-->
+                                    <!--android:text="Owner Type :"-->
+                                    <!--android:textSize="13dp" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/ownerGenderRide5"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:padding="5dp"-->
+                                    <!--android:text="About"-->
+                                    <!--android:textSize="13dp" />-->
+
+
+
+
+                            <!--</LinearLayout>-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:layout_marginLeft="10dp"-->
+                                <!--android:layout_marginRight="10dp">-->
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:padding="5dp"-->
+                                    <!--android:text="Address :"-->
+                                    <!--android:textSize="13dp" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/ownerAddRide5"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:padding="5dp"-->
+                                    <!--android:textSize="13dp" />-->
+
+
+
+
+                            <!--</LinearLayout>-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:layout_marginLeft="10dp"-->
+                                <!--android:layout_marginRight="10dp">-->
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:padding="5dp"-->
+                                    <!--android:text="About :"-->
+                                    <!--android:textSize="13dp" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/ownAboutRide5"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:padding="5dp"-->
+                                    <!--android:text="About"-->
+                                    <!--android:textSize="13dp" />-->
+
+
+                            <!--</LinearLayout>-->
+
+                            <!--<LinearLayout-->
+                                <!--android:visibility="gone"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:layout_marginLeft="10dp"-->
+                                <!--android:layout_marginRight="10dp">-->
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:padding="5dp"-->
+                                    <!--android:text="Contact :"-->
+                                    <!--android:textSize="13dp" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/owncontact5"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:padding="5dp"-->
+                                    <!--android:text="About"-->
+                                    <!--android:textSize="13dp" />-->
+
+
+                            <!--</LinearLayout>-->
+
+
+
+                        <!--</LinearLayout>-->
+
+
+                        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:orientation="horizontal">&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:text="Member Since :"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:textSize="13dp" />&ndash;&gt;-->
+
+
+                                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:text="Owner Type :"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:textSize="13dp" />&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:text="Address :"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:textSize="13dp" />&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:text="About :"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:textSize="13dp" />&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:text="Contact :"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:textSize="13dp" />&ndash;&gt;-->
+
+
+                            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:id="@+id/memberRide"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:text="2010"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:textSize="13dp" />&ndash;&gt;-->
+
+
+                                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:id="@+id/ownerGenderRide"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:text="About"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:textSize="13dp" />&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:id="@+id/ownerAddRide"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:text="About"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:textSize="13dp" />&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:id="@+id/ownAboutRide"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:text="About"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:textSize="13dp" />&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:id="@+id/owncontact"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:text="About"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;android:textSize="13dp" />&ndash;&gt;-->
+
+
+                            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+                        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Confirm"
+        android:id="@+id/done"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@drawable/button_color"
+        android:textColor="#ffffff"
+        />
+</LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL TRIP COST"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalCoast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$350.00"
+                    android:textColor="#2baf6c"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#626262" />
+
+
+            <TextView
+                android:id="@+id/feedbackCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/textforfeedback"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Number"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_border"
+            android:hint="XXXX-XXXX-XXXX-0100"
+            android:padding="5dp"
+            android:maxLength="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            >
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="#626262"
+            />
+
+            </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Feedback"
+            android:layout_marginTop="30dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <RatingBar
+                android:id="@+id/feedbackratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:clickable="true"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="0"
+                android:theme="@style/RatingBar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:id="@+id/ratingBarText"
+                android:layout_toRightOf="@id/ratingBar"
+                android:text="3.5/5" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Type your comments...."
+            android:gravity="top"
+            android:padding="10dp"
+            android:textSize="13dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/edittext_border"
+            android:maxLines="4" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/linearlayout5"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:background="@drawable/shedow_background"
+            android:elevation="10dp"
+
+            >
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="Submit"
+                android:id="@+id/btnRate"
+                android:textAllCaps="false"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_color"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </FrameLayout>

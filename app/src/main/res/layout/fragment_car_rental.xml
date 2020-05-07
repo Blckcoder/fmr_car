@@ -1,0 +1,466 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shedow_background"
+                android:elevation="8dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_rent_by_day"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:padding="5dp"
+                        android:src="@drawable/rent_day" />
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/iv_rent_by_day"
+                        android:drawablePadding="2dp"
+                        android:drawableRight="@drawable/information"
+                        android:text="Rent By Day"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:id="@+id/bookDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/button_color"
+                        android:text="FIND NOW"
+                        android:textColor="#ffffff" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e1e0e0" />
+
+                <LinearLayout
+                    android:id="@+id/edLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_border"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/currentlocationRentByDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:maxLength="100"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="Your Pickup Location"
+                        android:textColor="@color/colorcontent"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="10dp" />
+
+
+                    <ImageView
+                        android:id="@+id/locationImage"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|center"
+                        android:layout_weight=".3"
+                        android:backgroundTint="@color/buttonColor"
+                        android:src="@drawable/location" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_border"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/startDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.6"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:focusable="true"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:text="Pickup Date"
+                            android:textSize="10dp" />
+
+
+                        <ImageView
+                            android:id="@+id/pickUpImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:src="@drawable/calender" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_border"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/endDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:text="Dropoff Date"
+                            android:textSize="10dp" />
+
+                        <ImageView
+                            android:id="@+id/dropOffImage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight=".8"
+                            android:src="@drawable/calender" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shedow_background"
+                android:elevation="8dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:elevation="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_rent_by_hour"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:padding="5dp"
+                        android:src="@drawable/rent_hour" />
+
+
+                    <TextView
+                        android:id="@+id/tv_rent_by_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/iv_rent_by_hour"
+                        android:drawablePadding="2dp"
+                        android:drawableRight="@drawable/information"
+                        android:text="Rent By Hour"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/bookHour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/button_color"
+                        android:text="FIND NOW"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e1e0e0" />
+
+
+                <LinearLayout
+                    android:id="@+id/edLocation_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_border"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/currentlocationRentByHour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:ellipsize="end"
+                        android:hint="Your Pickup Location"
+                        android:maxLength="100"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="10dp" />
+
+                    <ImageView
+                        android:id="@+id/loctaion_image_hour"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|center"
+                        android:layout_weight=".3"
+                        android:src="@drawable/location" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearStar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_border"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/starttime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.6"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:focusable="true"
+                            android:focusableInTouchMode="false"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:text="Pickup Time"
+                            android:textSize="10dp" />
+
+                        <ImageView
+                            android:id="@+id/pickupimageview_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:src="@drawable/calender" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearEn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_border"
+                        android:padding="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/endtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:focusableInTouchMode="false"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:text="Dropoff Time"
+                            android:textSize="10dp" />
+
+                        <ImageView
+                            android:id="@+id/dropofimageview_hour_drop"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight=".7"
+                            android:src="@drawable/calender" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shedow_background"
+                android:elevation="8dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:elevation="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:elevation="10dp"
+                        android:src="@drawable/rent_out" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.7"
+                        android:text="Rent Out Your Car"
+                        android:textAlignment="center"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight=".3"
+                        android:background="#d1d1d1"
+                        android:text="RENT OUT"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e1e0e0" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/driving_soon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="DRIVING SOON"
+                    android:textSize="17dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.fmrnz.avlIndicatorLoding.AVLoadingIndicatorView
+            android:id="@+id/progressLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            tools:indicator="BallScaleMultiple" />
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
